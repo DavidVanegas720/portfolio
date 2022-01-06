@@ -70,31 +70,40 @@ html{
     font-size: 20px;
     list-style: none;
     z-index: 1;
+    display: none;
 }
 .header--menu li{
+    width: 100%;
     padding: 25px;
+    text-align: center;
 }
 
 .header--menu li a {
+    width: 100%;
+    height: 100%;
     color: var(--text-color);
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
 }
 .header--menu li a:hover {
+    width: 100%;
+    height: 100%;
     color: #fff;
 }
+
 .header--menu li:hover{
+    cursor: pointer;
     background-color: black;
+    color: #fff;
      width: 100%;
      text-align: center;
      transition: ease-out .3s;
 }
 
-
-
 .input-btn:checked + .header--menu{
-   display: none;
+   display: block;
+   
 }
 
 
@@ -103,14 +112,15 @@ html{
     width: 320px;
     height: 400px;
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     text-align: center;
     position: relative;
+    border-radius: 50%;
 }
 
 .header--photo-center .photo{
-    width: 60%;
-    height: 150px;
+    width: 90%;
+     height: 200px; 
     border-radius: 50%;
     margin:0 auto;
     margin-top: 60px;
@@ -137,7 +147,7 @@ html{
 }
 
 .container-main .container-photo{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin: 0 auto;
     width: 320px;
     height: 320px;
@@ -145,6 +155,8 @@ html{
 .container-main .container-photo img{
     width: 100%;
     height: 100%;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.99);
 }
 
 .container-main .information h2{
