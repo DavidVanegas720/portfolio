@@ -1,0 +1,160 @@
+:root {
+    --mid-color: #1e2233;
+    --text-color:#ff5c55;
+}
+
+html{
+  font-family: 'Montserrat', sans-serif;;
+}
+/* ----------------------styles for burguer menu header-------------------------------------------------- */
+.header{
+    background-image: url('./assets/img/background-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: 100vh;
+}
+
+ .header .header--blur{
+    background-color: rgba(0, 0, 0, 0.55);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.header--menu-container{
+    height: 60px;
+    color: #fff;
+    position: relative;
+}
+
+
+.header--menu-container label{
+    margin-left: 300px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.header--menu-container label img{
+    width: 30px;
+}
+.header--menu-container label img:hover{
+    cursor: pointer;
+}
+.header--menu-container .input-btn{
+    display: none;
+}
+.header--menu{
+    position: absolute;
+    top: 40px;
+    left: 95px;
+    background-color: var(--text-color);
+    border: 3px solid black;
+    width: 60%;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    list-style: none;
+    z-index: 1;
+}
+.header--menu li{
+    padding: 25px;
+}
+
+.header--menu li a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.header--menu li a:hover {
+    color: #fff;
+}
+.header--menu li:hover{
+    background-color: black;
+    width: 100%;   
+}
+
+
+
+.input-btn:checked + .header--menu{
+   display: none;
+}
+
+
+/* ----------------------styles for img center----------------------------------------------------- */
+.header--photo-center{
+    width: 320px;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px solid red;
+    text-align: center;
+    position: relative;
+}
+
+.header--photo-center .photo{
+    width: 60%;
+    height: 150px;
+    border-radius: 50%;
+    margin:0 auto;
+    margin-top: 60px;
+}
+.header--photo-center h1{
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.header--photo-center p{
+    font-weight: 500;
+    font-size: 25;
+    color: #fff;
+}
+
+/* ----------------------styles for main-content------------------------------------------ */
+
+.container-main{
+    background-color: var(--mid-color);
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.container-main .container-photo{
+    border: 2px solid red;
+    margin: 0 auto;
+    width: 320px;
+    height: 320px;
+}
+.container-main .container-photo img{
+    width: 100%;
+    height: 100%;
+}
+
+.container-main .information h2{
+    color: var(--text-color);
+    text-align: center;
+    font-size: 2.1rem;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.container-main .information p{
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    /* border: 1px solid #fff; */
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+}
