@@ -103,7 +103,6 @@ html{
 
 .input-btn:checked + .header--menu{
    display: block;
-   
 }
 
 
@@ -181,5 +180,29 @@ html{
 /* ----------------styles for footer-------------------------------------- */
 .footer--container{
     width: 100%;
-    height: 200px;
+    height: 100vh;
+}
+
+.footer--container .cards--container{
+    background-color: #24273d;
+    color: var(--text-color);
+    width: 100%;
+    height: 100vh;
+}
+
+.cards--container .card-project{
+    border: 1px solid purple;
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 10%;
+    height: 150px;
+    min-width: 288px;
+}
+
+.cards--container h3{
+    padding-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
