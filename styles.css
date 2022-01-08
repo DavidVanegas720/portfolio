@@ -11,15 +11,16 @@ html{
     background-image: url('./assets/img/background-header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 
     width: 100%;
     height: 100vh;
 }
 
  .header .header--blur{
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(0, 0, 0, 0.50);
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -36,10 +37,6 @@ html{
 
 
 .header--menu-container label{
-    border: 1px solid #fff;
-    width: 40px;
-    height: 35px;
-    background-color: rgba(255, 255, 255, 0.2);
     margin-left: 300px;
     position: absolute;
     top: 10px;
@@ -48,6 +45,7 @@ html{
 
 .header--menu-container label img{
     width: 30px;
+    filter: invert(99%) sepia(5%) saturate(0%) hue-rotate(216deg) brightness(116%) contrast(100%);
 }
 .header--menu-container label img:hover{
     cursor: pointer;
@@ -106,7 +104,7 @@ html{
 }
 
 
-/* ----------------------styles for img center----------------------------------------------------- */
+/* ----------------------styles for img center and icons social----------------------------------------------------- */
 .header--photo-center{
     width: 320px;
     height: 400px;
@@ -133,6 +131,25 @@ html{
     font-weight: 500;
     font-size: 25;
     color: #fff;
+}
+
+/* ---------------------------------icons---social--------------------------------- */
+.header .social--icons{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    
+    width: 200px;
+    height: 50px;
+}
+
+.header .social--icons a{
+    padding-left: 30px;
+    margin: 0 auto;
+}
+.header .social--icons img {
+width: 40px;
+filter: invert(99%) sepia(5%) saturate(0%) hue-rotate(216deg) brightness(116%) contrast(100%);
 }
 
 /* ----------------------styles for main-content------------------------------------------ */
@@ -171,7 +188,7 @@ html{
     width: 300px;
     margin: 0 auto;
     padding: 10px;
-    /* border: 1px solid #fff; */
+     border: 1px solid #fff; 
     color: #fff;
     font-size: 1rem;
     text-align: center;
@@ -201,8 +218,13 @@ html{
 }
 
 .cards--container h3{
-    padding-top: 10px;
     text-align: center;
     font-weight: bold;
     font-size: 1.5rem;
 }
+/* .footer--container .reserved-rights{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 1.2rem;
+} */
