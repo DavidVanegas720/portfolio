@@ -5,21 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="normalice.css">
+    <link rel="stylesheet" href="./styles/normalice.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Montserrat:wght@500&family=Oswald:wght@300&family=Rubik:ital,wght@1,300&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/queries.css" media="(min-width: 550px)">
     <title>My portfolio</title>
 </head>
 
-<body>
+     <body> 
+        <div class="lds-dual-ring loader" id="loader"></div>
+
+     <div class="main">
     <header class="header">
         <div class="header--blur">
         </div>
-        <nav class="header--menu-container">
+        <nav class="menu-container">
 
             <label for="check" class="bar-btn">
                 <img src="./assets/icons/bars.svg" alt="">
@@ -28,7 +32,9 @@
 
 
             <ul class="header--menu">
-                <li><a href="#">button</a></li>
+                <li>
+                    <div><a href="#">button</a></div>
+                </li>
                 <li><a href="#">button</a></li>
                 <li><a href="#">button</a></li>
                 <li><a href="#">button</a></li>
@@ -41,8 +47,10 @@
             <p>Junior developer front-end</p>
         </div>
         <div class="social--icons">
-            <a href="https://github.com/DavidVanegas720"><img src="./assets/icons/github.svg" alt=""></a>
-            <a href="https://www.linkedin.com/in/david-vanegas-053702159/"><img src="./assets/icons/linkedin.svg" alt=""></a>
+            <a href="https://github.com/DavidVanegas720"><img src="./assets/icons/github.svg"
+                    alt="button go to linkedin"></a>
+            <a href="https://www.linkedin.com/in/david-vanegas-053702159/"><img src="./assets/icons/linkedin.svg"
+                    alt=""></a>
         </div>
     </header>
     <!-- ------------------main-content------------------------------------------------------- -->
@@ -55,19 +63,15 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ipsam, sequi quasi similique illo
                 deleniti reiciendis iusto id eaque earum neque ipsa deserunt unde! Ut repellendus suscipit tempore cum
                 explicabo?</p>
-            <!-- <div class="social-icons">
-
-            </div> -->
         </section>
     </main>
     <!-- ---------------------------------footer---------------------------------------------------- -->
     <footer class="footer--container">
-
-
+        <h3>
+            My Projects
+        </h3>
         <div class="cards--container">
-            <h3>
-                My Projects
-            </h3>
+
             <div class="card-project">project1</div>
             <div class="card-project">project2</div>
             <div class="card-project">project3</div>
@@ -76,6 +80,8 @@
             <h4>All reserved-rights ©</h4>
         </div> -->
     </footer>
+</div>
+    <script src="main.js"></script>
 </body>
 
 </html>

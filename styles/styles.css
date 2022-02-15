@@ -1,14 +1,63 @@
 :root {
     --mid-color: #1e2233;
     --text-color:#ff5c55;
+    --footer-color: #24273d;
 }
 
 html{
   font-family: 'Montserrat', sans-serif;;
 }
+
+
+/* ------------preloader---------------------------- */
+
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .loader{
+    position: fixed;
+    top: 0;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(150% at 100% 0);
+    transition: clip-path 0.8s ease-in-out ;
+}
+
+    .loader2{
+        clip-path: circle(0% at 100% 0);
+    }
+
+  
 /* ----------------------styles for burguer menu header-------------------------------------------------- */
 .header{
-    background-image: url('./assets/img/background-header.jpg');
+    background-image: url('../assets/img/background-header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -29,28 +78,28 @@ html{
     align-items: center;
 } 
 
-.header--menu-container{
+.header .menu-container{
     height: 60px;
     color: #fff;
     position: relative;
 }
 
 
-.header--menu-container label{
+.menu-container label{
     margin-left: 300px;
     position: absolute;
     top: 10px;
     left: 20px;
 }
 
-.header--menu-container label img{
+.menu-container label img{
     width: 30px;
     filter: invert(99%) sepia(5%) saturate(0%) hue-rotate(216deg) brightness(116%) contrast(100%);
 }
-.header--menu-container label img:hover{
+.menu-container label img:hover{
     cursor: pointer;
 }
-.header--menu-container .input-btn{
+.menu-container .input-btn{
     display: none;
 }
 .header--menu{
@@ -58,7 +107,7 @@ html{
     top: 40px;
     left: 95px;
     background-color: #24273d;
-    border: 1px solid #fff;
+    border: 1px solid #fff; 
     width: 60%;
     height: 300px;
     margin: 0 auto;
@@ -138,13 +187,16 @@ html{
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    
+    margin-top: 50px;
+    /* border: 1px solid black; */
     width: 200px;
     height: 50px;
 }
 
 .header .social--icons a{
-    padding-left: 30px;
+    margin: 0 auto;
+    /* padding-left: 30px; */
+    /* padding-right: 50px; */
     margin: 0 auto;
 }
 .header .social--icons img {
@@ -198,6 +250,14 @@ filter: invert(99%) sepia(5%) saturate(0%) hue-rotate(216deg) brightness(116%) c
 .footer--container{
     width: 100%;
     height: 100vh;
+    background-color: var(--footer-color);
+}
+.footer--container h3{
+    padding-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--text-color);
 }
 
 .footer--container .cards--container{
@@ -217,11 +277,6 @@ filter: invert(99%) sepia(5%) saturate(0%) hue-rotate(216deg) brightness(116%) c
     min-width: 288px;
 }
 
-.cards--container h3{
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.5rem;
-}
 /* .footer--container .reserved-rights{
     width: 100%;
     height: 50px;
